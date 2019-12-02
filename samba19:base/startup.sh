@@ -3,8 +3,8 @@
 # startup.sh
 # -------------------------------------
 
-/opt/docker/install.sh && echo "Install Ok"
-/usr/sbin/smbd && echo "smb Ok"
-/usr/sbin/nmbd && echo "nmb  Ok"
-/bin/bash
+/opt/docker/install.sh 
+/usr/sbin/smbd 
+/usr/sbin/nmbd -F 
+
 
