@@ -7,7 +7,7 @@ Servidor samba que conecta con otro servidor ldapserver y exporta homes de los u
 ```bash
 docker run --rm --name ldapserver -h ldapserver --net ldapnet -d jorgepastorr/ldapserver19
 
-docker run --rm --name samba -h samba --net ldapnet --privileged -d jorgepastorr/samba19:pam
+docker run --rm --name samba -h samba --net ldapnet -v homes:/tmp/home --privileged -d jorgepastorr/samba19:pam
 ```
 
 
